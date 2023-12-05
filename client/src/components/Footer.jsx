@@ -12,11 +12,7 @@ function Footer() {
           Images via <a href="https://www.freepik.com/">Freepik</a> & <a href="https://www.unsplash.com">Unsplash</a>
         </div>
         <p className="m-0" style={{ fontSize: 12 }}>
-          Copyright &copy; {new Date().getFullYear()}{" "}
-          <a href="https://radcliffe-portfolio.onrender.com" className="text-muted">
-            Redcliffe Design
-          </a>
-          . All rights reserved.
+          Copyright &copy; {new Date().getFullYear()} <Link to="https://radcliffe-portfolio.onrender.com">Redcliffe Design</Link>. All rights reserved.
         </p>
       </footer>
     </div>
