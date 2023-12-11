@@ -30,9 +30,14 @@ a {
   margin: 28px 0px 28px 0px;
   padding: 16px;
   display: flex;
-  align-items: flex-start;
+  justify-content: space-around;
 }
 
 #homeGuestImage {
+  height: 50%;
   width: 50%;
+}
+
+#loginSubmit {
+  background-color: #460000;
 }
