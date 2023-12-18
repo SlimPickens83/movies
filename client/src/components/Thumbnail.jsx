@@ -1,6 +1,6 @@
 import Card from "react-bootstrap/Card"
 
-function Thumbnail() {
+function Thumbnail(props) {
   return (
     <Card style={{ width: "18rem" }}>
       <Card.Body>
