@@ -53,3 +53,34 @@ a {
 #devSign {
   background-color: #1f3e70;
 }
+
+/* Home (profile) component styling */
+
+#profileContainer {
+  height: 100lvh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#profile {
+  background-color: #1f3e70;
+  height: 90lvh;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 14px;
+  padding: 8px;
+}
+
+#collection {
+  background-color: #100000;
+  height: 75lvh;
+  width: 95%;
+}
+
+#signOut {
+  padding: 16px;
+}
