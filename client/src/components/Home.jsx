@@ -1,12 +1,23 @@
-import React from "react"
+import { useContext } from "react"
+import DispatchContext from "../DispatchContext"
+import Button from "react-bootstrap/Button"
+import Form from "react-bootstrap/Form"
 
 function Home() {
-  ;<div id="home">
+  const appDispatch = useContext(DispatchContext)
+  function handleSubmit(e) {
+    e.preventDefault()
+    appDispatch({ type: "logout" })
+  }
+  return (
     <div id="profile">
-      <h1>John Smith</h1>
+      <h1 id="proName">John Smith</h1>
       <div id="collection"></div>
+      <Form onSubmit={handleSubmit}>
+        <Button type="submit">Sign Out</Button>
+      </Form>
     </div>
-  </div>
+  )
 }
 
 export default Home

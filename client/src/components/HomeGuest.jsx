@@ -11,26 +11,30 @@ import admitOne from "../assets/admitOne.png"
 
 function HomeGuest() {
   const appDispatch = useContext(DispatchContext)
-  const [username, setUsername] = useState()
-  const [password, setPassword] = useState()
-  const navigate = useNavigate()
+  // const [username, setUsername] = useState()
+  // const [password, setPassword] = useState()
+  // const navigate = useNavigate()
 
   async function handleSubmit(e) {
     e.preventDefault()
 
-    try {
-      const response = await Axios.post("/login", { username, password })
+    // for dev test sign-in
 
-      if (response.data) {
-        appDispatch({ type: "login", data: response.data })
-        navigate("/Home")
-      } else {
-        console.log("Incorrect username or password.")
-      }
-    } catch (e) {
-      console.log("Undetermined login error.")
-      console.log({ e })
-    }
+    appDispatch({ type: "login" })
+
+    // try {
+    //   const response = await Axios.post("/login", { username, password })
+
+    //   if (response.data) {
+    //     appDispatch({ type: "login", data: response.data })
+    //     navigate("/Home")
+    //   } else {
+    //     console.log("Incorrect username or password.")
+    //   }
+    // } catch (e) {
+    //   console.log("Undetermined login error.")
+    //   console.log({ e })
+    // }
   }
 
   return (
@@ -55,6 +59,12 @@ function HomeGuest() {
           </Button>
         </div>
         <h6>New user? Register here.</h6>
+        <Form onSubmit={handleSubmit} id="devTest">
+          <h5>Dev Testing Sign-In</h5>
+          <Button id="devSign" type="submit">
+            Sign-In
+          </Button>
+        </Form>
       </div>
     </div>
   )

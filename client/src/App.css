@@ -41,3 +41,15 @@ a {
 #loginSubmit {
   background-color: #460000;
 }
+
+#devTest {
+  border: 1px solid black;
+  border-radius: 8px;
+  margin: 14px;
+  padding: 8px;
+  background-color: #606773;
+}
+
+#devSign {
+  background-color: #1f3e70;
+}
