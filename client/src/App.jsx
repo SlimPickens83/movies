@@ -34,6 +34,9 @@ function App() {
       case "logout":
         draft.loggedIn = false
         return
+      case "addFilm":
+        alert("Add film feature coming soon.")
+        return
     }
   }
 

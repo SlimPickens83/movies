@@ -79,6 +79,8 @@ a {
   background-color: #100000;
   height: 75lvh;
   width: 95%;
+  display: flex;
+  padding: 12px;
 }
 
 #signOut {
